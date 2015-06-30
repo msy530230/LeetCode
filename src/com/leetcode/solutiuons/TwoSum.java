@@ -22,11 +22,10 @@ import java.util.Map;
 public class TwoSum {
 
   public static void main(String[] args) {
-    int[] result = twoSum(new int[] { 0, 4, 3, 0 }, 0);
-    System.out.println(result);
+
   }
 
-  public static int[] twoSum(int[] nums, int target) {
+  public int[] twoSum(int[] nums, int target) {
     // 输入长度小于2时抛出异常
     if (null == nums || 2 > nums.length) {
       throw (new IllegalArgumentException());
