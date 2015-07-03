@@ -23,6 +23,7 @@ public class AddTwoNumbers {
     if (null == l1 && null == l2) {
       throw (new IllegalArgumentException("长度不能为0"));
     }
+    // 低位相加
     while (null != l1 || null != l2) {
       if (null != l1) {
         sum += l1.val;
@@ -32,10 +33,12 @@ public class AddTwoNumbers {
         sum += l2.val;
         l2 = l2.next;
       }
+      // 进位处理
       point.next = new ListNode(sum % 10);
       point = point.next;
       sum /= 10;
     }
+    // 最后一位是否有进位
     if (sum != 0) {
       point.next = new ListNode(sum % 10);
     }
