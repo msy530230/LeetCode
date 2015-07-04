@@ -11,11 +11,9 @@ package com.leetcode.solutiuons;
 public class AddTwoNumbers {
 
   public static void main(String[] args) {
-    ListNode five = new ListNode(5);
-    addTwoNumbers(five, five);
   }
 
-  public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+  public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     ListNode rear = new ListNode(0);
     ListNode point = rear;
     int sum = 0;
